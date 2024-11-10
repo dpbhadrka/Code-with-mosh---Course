@@ -1,4 +1,5 @@
 import './App.css'
+import Form from './Components/ListGroup/Form/Form';
 import ListGroup from './Components/ListGroup/ListGroup'
 
 function App() {
@@ -9,10 +10,11 @@ const fruits = ["Apple", "Banana", "Pineapple", "Grapes", "Guava", "Kiwi"];
   }
   return (
     <div className="App">
-      <ListGroup items={fruits} title="Fruits" handler={onclickHandler}>
+      {/* <ListGroup items={fruits} title="Fruits" handler={onclickHandler}>
         Here is the <strong>Description</strong>
-        </ListGroup>
+        </ListGroup> */}
       {/* <ListGroup items={names} title="Name"/> */}
+      <Form/>
     </div>
   )
 }
